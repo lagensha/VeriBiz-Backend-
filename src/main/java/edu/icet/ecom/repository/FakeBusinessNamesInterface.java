@@ -4,7 +4,6 @@ import edu.icet.ecom.dto.NamesDto;
 
 public interface FakeBusinessNamesInterface {
     NamesDto getInformation();
-    Integer calculateStatus(Integer following, Integer likes);
+    boolean calculateStatus();
     void getCountOfPosts(Integer posts);
-     int checkEngagementRisk(double engagement);
 }

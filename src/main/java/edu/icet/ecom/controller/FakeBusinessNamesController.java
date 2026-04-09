@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/FakeBusinessNames")
 public class FakeBusinessNamesController {
 
-    private NamesDto namesDto= new NamesDto();
+    private NamesDto namesDto = new NamesDto();
 
     final FakeBusinessNameService fakeBusinessNameService;
+
     @GetMapping("/addInformation")
     public NamesDto getInformation(NamesDto namesDto) {
         return fakeBusinessNameService.getInformation(namesDto);
@@ -27,7 +28,4 @@ public class FakeBusinessNamesController {
 
     }
 
-    public int checkEngagementRisk(double engagement) {
-        return 0;
-    }
 }
