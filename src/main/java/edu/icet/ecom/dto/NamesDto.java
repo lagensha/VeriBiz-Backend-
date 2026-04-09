@@ -11,6 +11,6 @@ public class NamesDto {
     private String userName;
     private String followingCount;
     private String likes;
+    private String followersCount;
     private boolean isAccountFake;
-    private double engagement;
 }
