@@ -1,4 +1,4 @@
 package edu.icet.ecom.repository.impl;
 
-public class FakeBusinessNames {
+public class FakeBusinessNamesImpl {
 }
