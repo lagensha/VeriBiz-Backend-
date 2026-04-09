@@ -20,8 +20,10 @@ public class FakeBusinessNamesController {
         return fakeBusinessNameService.getInformation(namesDto);
     }
 
-    public Integer calculateStatus(String following, String likes) {
-        return 0;
+    @PostMapping("/calculateStatus")
+    public boolean calculateStatus(String following, String likes) {
+        return fakeBusinessNameService.calculateStatus();
+
     }
 
     public void getCountOfPosts(Integer posts) {
