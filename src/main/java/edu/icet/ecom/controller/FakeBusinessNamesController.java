@@ -15,14 +15,14 @@ public class FakeBusinessNamesController {
 
     final FakeBusinessNameService fakeBusinessNameService;
 
-    @GetMapping("/addInformation")
+    @PostMapping("/addInformation")
     public NamesDto getInformation(NamesDto namesDto) {
         return fakeBusinessNameService.getInformation(namesDto);
     }
 
     @PostMapping("/calculateStatus")
-    public boolean calculateStatus(String following, String likes) {
-        return fakeBusinessNameService.calculateStatus(following, likes, namesDto.getFollowersCount());
+    public void calculateStatus(NamesDto namesDto) {
+        fakeBusinessNameService.calculateStatus(namesDto);
 
     }
 

@@ -5,7 +5,7 @@ import edu.icet.ecom.dto.NamesDto;
 public interface FakeBusinessNameService {
     NamesDto getInformation(NamesDto namesDto);
 
-    boolean calculateStatus(String following, String likes, String followers);
+    String calculateStatus(NamesDto namesDto);
 
     void getCountOfPosts(Integer posts);
 }
