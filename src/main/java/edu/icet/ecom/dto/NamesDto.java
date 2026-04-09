@@ -9,8 +9,8 @@ import lombok.*;
 @ToString
 public class NamesDto {
     private String userName;
-    private Integer followingCount;
-    private Integer likes;
+    private String followingCount;
+    private String likes;
     private boolean isAccountFake;
     private double engagement;
 }
