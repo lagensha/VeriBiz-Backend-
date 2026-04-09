@@ -12,4 +12,5 @@ public class NamesDto {
     private Integer followingCount;
     private Integer likes;
     private boolean isAccountFake;
+    private double engagement;
 }
