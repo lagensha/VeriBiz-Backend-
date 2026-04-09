@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class FakeBusinessNamesController {
 
     private NamesDto namesDto= new NamesDto();
+
     final FakeBusinessNameService fakeBusinessNameService;
     @GetMapping("/addInformation")
     public NamesDto getInformation(NamesDto namesDto) {
