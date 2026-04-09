@@ -22,7 +22,7 @@ public class FakeBusinessNamesController {
 
     @PostMapping("/calculateStatus")
     public boolean calculateStatus(String following, String likes) {
-        return fakeBusinessNameService.calculateStatus();
+        return fakeBusinessNameService.calculateStatus(following, likes, namesDto.getFollowersCount());
 
     }
 
